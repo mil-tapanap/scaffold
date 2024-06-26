@@ -13,7 +13,7 @@ jobs:
         python-version: 3.5.10
     - name: Install dependencies
       run: |
-        make install
+        make install-azure
     # Remove Pylint for now
     # - name: Lint with Pylint
     #   run: |
