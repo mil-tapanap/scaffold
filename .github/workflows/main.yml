@@ -1,7 +1,9 @@
-name: Python application test with Github Actions
+name: Python application test with GitHub Actions
+# on every push
 on: [push]
 jobs:
   build:
+  #on which container
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -12,6 +14,7 @@ jobs:
     - name: Install dependencies
       run: |
         make install
+    # Remove Pylint for now
     # - name: Lint with Pylint
     #   run: |
     #     make lint
